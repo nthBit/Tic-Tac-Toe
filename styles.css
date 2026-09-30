@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#gameboard {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    height: 750px;
+    width: 750px;
+    border: solid black 1px;
+}
+
+.game-square {
+    width: 250px;
+    height: 250px;
+    border: solid black 1px;
+}
+
+#start-btn {
+    border: solid black 2px;
+    width: 200px;
+    height: 100px;
+    margin-right: 100px;
+    border-radius: 5px;
+    font-size: 2rem;
+}
+
+#start-btn:hover {
+    background-color: aquamarine;
+}
